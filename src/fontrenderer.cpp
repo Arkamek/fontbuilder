@@ -300,8 +300,8 @@ void FontRenderer::on_fontSizeChanged() {
     if (fixedsize) {
         qDebug() << "fixed size not impemented";
     } else {
-        int size_x = static_cast<int>(m_config->width()*size*64.0f/100.0f);
-        int size_y = static_cast<int>(m_config->height()*size*64.0f/100.0f);
+        int size_x = static_cast<int>((m_config->width()*size*64.0f)/100.0f);
+        int size_y = static_cast<int>((m_config->height()*size*64.0f)/100.0f);
         int error = FT_Set_Char_Size(m_ft_face,
                                      FT_F26Dot6(size_x),
                                      FT_F26Dot6(size_y),m_config->DPI(),m_config->DPI());

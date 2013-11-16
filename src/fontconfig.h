@@ -47,7 +47,8 @@ public:
         HintingDisable,
         HintingDefault,
         HintingForceFreetypeAuto,
-        HintingDisableFreetypeAuto
+        HintingDisableFreetypeAuto,
+        HintingLight
     };
 
     const QString& path() const { return m_path; }

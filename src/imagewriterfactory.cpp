@@ -50,9 +50,7 @@ ImageWriterFactory::ImageWriterFactory(QObject *parent) :
     QObject(parent)
 {
     m_factorys["png"] = &png_img_writer;
-    m_factorys["PNG"] = &PNG_img_writer;
     m_factorys["tga"] = &tga_img_writer;
-    m_factorys["TGA"] = &TGA_img_writer;
 }
 
 QStringList ImageWriterFactory::names() const {
